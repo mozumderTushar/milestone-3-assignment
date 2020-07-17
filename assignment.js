@@ -4,7 +4,7 @@ function feetToMile(feet){
         var mile = (feet / 5280).toFixed(4);
         return mile;
     }else if(feet < 0){
-        return "Please Give a positive value for feet.";
+        return "Please Enter a positive value.";
     }else if(feet == 0){
         return "You entered 0";
     }
@@ -14,7 +14,7 @@ function feetToMile(feet){
 //woodCalculator
 function woodCalculator(chair,table,bed){
     if(chair <0 || table < 0 || bed < 0){
-        return "Please Give Positive Values.";
+        return "Please Enter Positive Values.";
     }
     else{
         var totalWood = (chair*1) + (table*3) + (bed*5);
@@ -26,7 +26,7 @@ function woodCalculator(chair,table,bed){
  //brickCalculator
  function brickCalculator(floor){
     if(floor<0){
-        return "Please Give Positive Value";
+        return "Please Enter Positive Value";
     }
     else if( floor>=0 && floor<=10){
         bricksWithinTen = floor*15*1000;
@@ -55,7 +55,7 @@ function woodCalculator(chair,table,bed){
 function tinyFriend(name){
     var small = name[0];
     if(small.length == 0){
-        return "It cant be empty, Please add your friends name";
+        return "It cant be empty, Please add name";
     }
     else{
          for(var i=0; i<name.length; i++){

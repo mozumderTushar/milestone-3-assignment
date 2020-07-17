@@ -59,15 +59,16 @@ function tinyFriend(name){
     }
     else{
          for(var i=0; i<name.length; i++){
-       var element = name[i];
-       if(element.length < small.length){
-           small = element;
+            var element = name[i];
+            if(element.length < small.length){
+                small = element;
+             }
          }
-       }
     }
    
     return small;
 }
+
 
 
 
